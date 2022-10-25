@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, toRefs } from 'vue';
+import { computed, toRefs } from 'vue'
 
 interface Props {
   yellow?: boolean,
@@ -9,14 +9,14 @@ interface Props {
 }
 
 const props = defineProps<Props>()
-const {yellow, black, green, disabled} = toRefs(props)
+const { yellow, black, green, disabled } = toRefs(props)
 
 const getAdditionalClasses = computed(() => {
   const classes = {
     'base-button--yellow': yellow?.value,
     'base-button--black': black?.value,
     'base-button--green': green?.value,
-    'base-button--disabled': disabled?.value,
+    'base-button--disabled': disabled?.value
   }
   return classes
 })
