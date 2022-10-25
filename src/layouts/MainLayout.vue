@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import AppHeaderFeautre from 'src/features/app-layout/app-header-feautre.vue';
+import AppHeaderFeautre from 'src/features/app-layout/app-header-feautre.vue'
 import { useDark } from '@vueuse/core'
 const isDark = useDark()
 </script>
